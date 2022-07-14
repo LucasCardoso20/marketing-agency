@@ -10,7 +10,7 @@ const FeaturedCarouselSingle = ({ featuredCarousel }) => {
       className='carousel-featured'
       style={{ backgroundImage: `url(${urlFor(featuredCarousel.image)})` }}
     >
-      <motion.div className={featuredCarousel.contentPositionInitial ? 'container-initial container' : 'carousel-content'}>
+      <motion.div className={featuredCarousel.contentPositionInitial ? 'container-initial container' : 'carousel-content container'}>
         <h1 style={{
           color:
             `${featuredCarousel.titleColor === 'main' ? '#3A3A50' : ''}
