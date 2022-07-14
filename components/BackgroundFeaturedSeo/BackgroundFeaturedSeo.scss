@@ -1,0 +1,69 @@
+@import '../../styles/index.scss';
+
+.background-featured-seo {
+    background-color: $third-color;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.background-featured-container {
+    padding: 8rem 1.5rem 10rem 1.5rem;
+    width: 50%;
+}
+
+.background-featured-title {
+    font-size: $font-size-biggest;
+    color: $main-color;
+}
+
+.background-featured-subtext {
+    font-size: $font-size-large;
+    color: $main-color;
+    font-weight: $weight-subtitles;
+}
+
+.background-featured-text {
+    color: $main-color;
+    font-weight: $weight-menu-and-button;
+    font-size: $font-size-excerpt;
+}
+
+//responsive
+
+@media screen and (max-width: 1000px) {
+    .background-featured-container {
+        padding: 5rem 1.5rem 5rem 1.5rem;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .background-featured-title {
+        font-size: $font-size-big-responsive;
+    }
+
+    .background-featured-subtext {
+        font-size: $font-size-large-responsive;
+    }
+
+    .background-featured-text{
+        font-size: $font-size-menu-and-button;
+    }
+
+    .background-featured-seo {
+        background-image: none !important;
+    }
+
+    .background-featured-container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .background-featured-container {
+        width: 90%;
+    }
+
+    
+
+}

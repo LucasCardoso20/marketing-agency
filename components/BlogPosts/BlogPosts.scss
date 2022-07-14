@@ -1,0 +1,48 @@
+@import '../../styles/index.scss';
+
+.blog {
+    padding: 8rem 1.5rem 8rem 1.5rem;
+}
+
+.blog-posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    text-align: center;
+
+    img {
+        width: 100%;
+    }
+}
+
+.post-title {
+    cursor: pointer;
+
+    &:hover {
+        color: $second-color;
+        transition: all .3s ease !important;
+    }
+}
+
+.btn-blog-container {
+    text-align: center;
+    margin-top: 3.5rem;
+}
+
+@media screen and (max-width: 1250px) {
+    .blog-posts-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .blog-container{
+        .subtitle-blog-section{
+            font-size: $font-size-excerpt;
+        }
+    }
+
+    .blog-posts-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

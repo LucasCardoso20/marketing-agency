@@ -1,0 +1,159 @@
+@import '../../styles/index.scss';
+
+
+.rec-carousel {
+    height: 785px !important;
+}
+
+.rec-arrow {
+    display: none;
+}
+
+.rec-slider-container {
+    margin: 0 !important;
+}
+
+.rec-pagination {
+    gap: 1rem;
+
+    button {
+        background-color: $main-color  !important;
+        height: 8px;
+        width: 8px;
+
+
+        &:hover {
+            box-shadow: none;
+            background-color: $second-color  !important;
+        }
+
+        &:focus {
+            box-shadow: none;
+            background-color: $second-color  !important;
+        }
+    }
+}
+
+.carousel-image {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.carousel-featured {
+    width: 100%;
+    height: 780px;
+    background-position: bottom;
+
+    img {
+        height: 780px;
+    }
+}
+
+//container contente original
+
+.carousel-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 6rem;
+    justify-content: center;
+    flex-direction: column;
+    left: 0;
+
+    h1 {
+        font-size: $font-size-big;
+        color: $second-color;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    h4 {
+        text-align: center;
+        color: $main-color;
+        font-size: $font-size-subtext;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+}
+
+//changing some values for the content initial
+
+.h4-carousel {
+    color: $main-color;
+    font-size: $font-size-subtext;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    bottom: 30px;
+    font-size: 40px !important;
+    text-transform: uppercase;
+    width: 100%;
+    display: flex;
+}
+
+.container-initial {
+    position: relative;
+    align-items: self-start;
+    margin-top: 6rem;
+    justify-content: center;
+    flex-direction: column !important;
+    left: 0;
+    width: 70% !important;
+    display: flex;
+
+    h1 {
+        font-size: $font-size-big;
+        color: $second-color;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    h4 {
+        color: $main-color;
+        font-size: $font-size-title ;
+        text-transform: uppercase;
+    }
+
+}
+
+
+
+//responsive 
+
+@media screen and (max-width: 1260px) {
+    .carousel-featured {
+        h1 {
+            font-size: $font-size-mid-big-responsive;
+        }
+    }
+
+    .h4-carousel {
+        justify-content: flex-start;
+        bottom: 20px;
+    }
+
+    .container-initial {
+        width: 100% !important;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .carousel-featured {
+        h1 {
+            font-size: $font-size-big-responsive;
+        }
+    }
+
+    .h4-carousel {
+        justify-content: flex-start;
+        bottom: 20px;
+        font-size: $font-size-subtext-responsive  !important;
+        margin-top: 1rem;
+    }
+
+    .container-initial {
+        width: 100% !important;
+        align-items: flex-start;
+    }
+}

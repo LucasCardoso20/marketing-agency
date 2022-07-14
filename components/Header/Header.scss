@@ -1,0 +1,154 @@
+@import '../../styles/index.scss';
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 50px 0 20px 0;
+
+    img{
+        cursor: pointer;
+    }
+
+    li {
+        margin-right: 40px;
+    }
+
+    a {
+        color: $main-color;
+        font-size: $font-size-menu-and-button;
+        font-weight: $weight-menu-and-button;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $second-color;
+            transition: $transition;
+        }
+    }
+}
+
+.menu-list {
+    margin-left: 10rem;
+    display: flex;
+
+
+}
+
+//mobile menu icons
+
+.menu-icon {
+    position: absolute;
+    display: none;
+    right: 1.5rem;
+    font-size: $font-size-subtext;
+    color: $second-color;
+    cursor: pointer;
+
+    &:hover{
+        color: $main-color;
+        transition: $transition;
+    }
+}
+
+.menu-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: $main-color;
+    font-size: $font-size-subtext;
+
+    &:hover{
+        color: $second-color;
+        transition: $transition;
+    }
+}
+
+//menu mobile container and funtionalities.
+
+.menu-mobile {
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background-color: $white-color;
+    top: 0;
+    height: 100vh;
+    transition: $transition;
+    position: fixed;
+}
+
+.show {
+    transform: translateX(0%) !important;
+    overflow-y: auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background-color: $white-color;
+    top: 0;
+    height: 100vh;
+    transition: $transition;
+    position: fixed;
+}
+
+
+.close {
+    transform: translateX(100%);
+    overflow-y: auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    background-color: $white-color;
+    top: 0;
+    height: 100vh;
+    transition: $transition;
+    position: fixed;
+
+}
+
+//menu mobile single item
+
+.menu-mobile-list {
+    width: 100%;
+    padding: 0;
+    margin-top: 4.5rem;
+
+    li {
+        margin-bottom: 1.5rem;
+    }
+
+    a {
+        text-transform: uppercase;
+        font-size: $font-size-blog-and-names;
+        font-weight: $weight-menu-and-button;
+        color: $main-color;
+
+        &:hover {
+            color: $second-color;
+            transition: $transition;
+        }
+
+    }
+}
+
+//responsive
+
+@media screen and (max-width: 900px) {
+    .menu-list {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .menu-list {
+        margin-left: 4rem;
+
+        a {
+            font-size: $font-size-menu-and-button-responsive;
+        }
+
+    }
+}

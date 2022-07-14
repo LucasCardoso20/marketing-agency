@@ -1,0 +1,212 @@
+//Font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$main-font: 'Poppins', sans-serif;
+
+//font-sizes
+$font-size-biggest: 120px;
+$font-size-big: 100px;
+$font-size-large: 72px;
+$font-size-title: 42px;
+$font-size-subtext: 30px;
+$font-size-blog-and-names: 24px;
+$font-size-check-icon: 26px;
+$font-size-excerpt: 19px;
+$font-size-menu-and-button: 16px;
+$font-size-menu-and-button-responsive: 15px;
+$font-size-placeholder: 13px;
+
+
+//font-mid-sizes
+
+$font-size-mid-biggest-responsive: 80px;
+$font-size-mid-big-responsive: 70px;
+$font-size-mid-large-responsive: 62px;
+$font-size-mid-title-responsive: 32px;
+$font-size-mid-subtext-responsive: 20px;
+
+//font-sizes responsive
+
+$font-size-biggest-responsive: 60px;
+$font-size-big-responsive: 50px;
+$font-size-large-responsive: 32px;
+$font-size-title-responsive: 32px;
+$font-size-subtext-responsive: 25px;
+
+
+
+//font-weight
+$weight-bolder: bold;
+$weight-titles: 700;
+$weight-menu-and-button: 600;
+$weight-subtitles: 300;
+
+
+//Colors
+
+$main-color: #3A3A50;
+$second-color: #ff3a5f;
+$third-color: #3AFAD5;
+$white-color: #fff;
+$placeholder-color: #FFFFFF;
+$background-bar-socials: #F5F6F9;
+$background-icons: rgba(58, 58, 80, 0.5);
+$background-icons-footer: rgba(255, 255, 255, 0.6);
+$horizontal-line-color: #CECECE;
+
+//transition
+
+$transition: ease-in-out 200ms;
+
+body {
+  margin: 0;
+  font-family: $main-font;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: $main-font;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  font-size: inherit;
+}
+
+ul{
+  list-style: none;
+  margin: 0 ;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  border: none;
+}
+
+figure{
+  margin: 0;
+}
+
+//setting a defined space to each container
+
+.container{
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.container-padding{
+  padding: 100px 20px 100px 20px;
+}
+
+// the btn class has all the main styles and the other classes changes the colors
+
+.btn{
+  font-weight: $weight-menu-and-button;
+  font-size: $font-size-menu-and-button;
+  padding: 15px 40px;
+  color: $white-color;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn-carousel{
+  background-color: $main-color;
+
+  &:hover{
+    background-color: $second-color;
+  }
+}
+
+.btn-second-color{
+  background-color: $second-color;
+
+  &:hover{
+    background-color: $main-color;
+  }
+}
+
+.btn-third-color{
+  background-color: $third-color;
+
+  &:hover{
+    background-color: $second-color;
+  }
+}
+
+
+//titles and subtitles classes
+
+.title-h2{
+  font-size: $font-size-title;
+  font-weight: $weight-titles;
+  color: $main-color;
+}
+
+.title-h3{
+  font-size: $font-size-subtext;
+  font-weight: $weight-titles;
+  color: $main-color;
+}
+
+.title-h4{
+  font-size: $font-size-blog-and-names;
+  font-weight: $weight-titles;
+  color: $main-color;
+}
+
+.title-name{
+  color: $white-color;
+}
+
+.subtitle{
+  font-size: $font-size-subtext;
+  font-weight: $weight-subtitles;
+}
+
+.subtitle-white{
+  color: $white-color;
+}
+
+.subtitle-main{
+  color: $main-color;
+}
+
+.subtitle-span{
+  color: $white-color;
+  font-size: $font-size-excerpt;
+  font-weight: $weight-subtitles;
+}
+
+//horizontal line class
+
+.horizontal-line{
+  margin: 47px 0 47px 0;
+  width: 100%;
+  border-bottom: 1px solid $horizontal-line-color;
+}
+
+.horizontal-line-span{
+  width: 4rem;
+  right: 1.5rem;
+  position: absolute;
+  border-bottom: 1px solid $second-color;
+}
+
+.horizontal-line-span-white{
+  width: 4rem;
+  right: 1.5rem;
+  position: absolute;
+  border-bottom: 1px solid $white-color;
+}
+
+.separator-counter{
+  width: 62px;
+  border-bottom: 4px solid $second-color;
+  margin: 1.5rem 0 1.5rem 0;
+}

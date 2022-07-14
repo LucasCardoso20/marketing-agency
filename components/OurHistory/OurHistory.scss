@@ -1,0 +1,61 @@
+@import '../../styles/index.scss';
+
+.our-history {
+    min-height: 885px;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.our-history-container {
+    width: 50%;
+    margin-top: 7rem;
+}
+
+.our-history-excerpt {
+    font-size: $font-size-excerpt;
+    color: $main-color;
+    font-weight: $weight-menu-and-button;
+}
+
+.our-history-block {
+    font-size: $font-size-excerpt;
+    font-weight: $weight-subtitles;
+}
+
+.our-history-checks {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    svg {
+        font-size: $font-size-check-icon;
+        color: $second-color;
+    }
+}
+
+.our-history-checks-container{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    h5{
+        font-size: $font-size-excerpt;
+    }
+}
+
+//responsive
+
+@media screen and (max-width: 1100px){
+    .our-history-container {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .our-history-container {
+        width: 100%;
+    }
+}
+

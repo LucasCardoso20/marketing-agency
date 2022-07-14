@@ -1,0 +1,15 @@
+@import '../../styles/index.scss';
+
+.our-clients {
+    margin: 5.5rem 0 5.5rem 0;
+
+    // h2{
+    //     margin-bottom: 3rem;
+    // }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
