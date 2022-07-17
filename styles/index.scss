@@ -210,3 +210,29 @@ figure{
   border-bottom: 4px solid $second-color;
   margin: 1.5rem 0 1.5rem 0;
 }
+
+.site-map{
+  background-color: $background-bar-socials;
+  padding: 1.5rem 0;
+
+  .site-map-container{
+    display: flex;
+    align-items: center;
+  }
+
+  h5{
+    color: $main-color;
+    font-size: $font-size-placeholder;
+    font-weight: $weight-menu-and-button;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    &:hover{
+      color: $second-color;
+    }
+  }
+
+  span{
+    margin: 0 0.7rem;
+  }
+}
