@@ -50,9 +50,9 @@ const Header = () => {
           <AiOutlineClose className='menu-close' onClick={() => setMenuToggle(false)} />
           <ul className="menu-mobile-list">
             {data.map((item) => (
-              <li key={item.name}>
-                <Link href={item.path}>
-                  <a>
+              <li key={item.name} >
+                <Link href={item.path} >
+                  <a onClick={()=> setMenuToggle(false)}>
                     {item.name}
                   </a>
                 </Link>
