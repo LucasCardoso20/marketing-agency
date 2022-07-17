@@ -31,7 +31,12 @@ const BlogPosts = ({ post }) => {
           ))}
         </div>
         <div className="btn-blog-container">
-          <button className="btn btn-carousel">View All Blog Posts</button>
+          <Link href={`/Blog`}>
+            <a>
+              <button className="btn btn-carousel">View All Blog Posts</button>
+            </a>
+          </Link>
+          
         </div>
 
       </div>
