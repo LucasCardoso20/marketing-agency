@@ -3,6 +3,7 @@ import { urlFor } from '../../client/client'
 import Link from 'next/link'
 import logo from '../../images/logo.webp'
 import Image from 'next/image'
+import footerImg from '../../images/footer_bg.webp'
 import { menuFirstColumn, menuSecondColumn } from '../../menuData'
 import { GrFacebookOption } from 'react-icons/gr'
 import { RiTwitterFill } from 'react-icons/ri'
@@ -10,7 +11,7 @@ import { AiFillYoutube } from 'react-icons/ai'
 
 const Footer = ({ footer }) => {
   return (
-    <footer id='footer' className='footer' style={{ backgroundImage: `url(${urlFor(footer[0].backgroundImage)})` }}>
+    <footer id='footer' className='footer'>
       <div className="footer-container container">
         <div className="logo-container">
           <Image src={logo} alt='logo' />

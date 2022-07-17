@@ -1,27 +1,27 @@
 export const data = [
     {
         name: 'About',
-        path: '/about'
+        path: '/About'
     },
 
     {
         name: 'Services',
-        path: '/services'
+        path: '/Services'
     },
 
     {
         name: 'Case Studies',
-        path: '/case-studies'
+        path: '/CaseStudies'
     },
 
     {
         name: 'Blog',
-        path: '/blog'
+        path: '/Blog'
     },
 
     {
-        name: 'Contact',
-        path: '/contact'
+        name: 'Contacts',
+        path: '/Contacts'
     },
 ]
 

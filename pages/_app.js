@@ -10,9 +10,16 @@ import '../components/BlogPosts/BlogPosts.scss'
 import '../components/BackgroundFeaturedSeo/BackgroundFeaturedSeo.scss'
 import '../components/OurClients/OurClients.scss'
 import '../components/Footer/Footer.scss'
+import Layout from '../components/Layout/Layout'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  
+  )
 }
 
 export default MyApp

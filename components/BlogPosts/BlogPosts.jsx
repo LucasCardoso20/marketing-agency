@@ -19,7 +19,7 @@ const BlogPosts = ({ post }) => {
 
         <div className="blog-posts-container">
           {featuredPosts.map((item) => (
-            <Link href={item.slug.current} key={item.title}>
+            <Link href={`/blog/${item.slug.current}`} key={item.title}>
               <a>
                 <article className="post">
                   <img src={urlFor(item.mainImage)} />

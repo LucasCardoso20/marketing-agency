@@ -1,4 +1,13 @@
+import React from "react";
 import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
+
+
+import {
+
   Header,
   FeaturedCarousel,
   FeaturedServices,
@@ -14,9 +23,7 @@ import {
 
 import { client } from '../client/client';
 
-
-
-function App({
+const Home = ({ 
   featuredCarousel,
   featuredServices,
   featuredServicesSection,
@@ -27,26 +34,21 @@ function App({
   ourTeam,
   backgroundFeaturedSeo,
   ourClients,
-  footer,
-}) {
-  return (
-
-    <div>
-      <Header />
-      <FeaturedCarousel featuredCarousel={featuredCarousel} />
-      <FeaturedServices featuredServices={featuredServices} featuredServicesSection={featuredServicesSection} />
-      <FeaturedText featuredText={featuredText} />
-      <OurHistory ourHistory={ourHistory} />
-      <CompanyStats companyStats={companyStats}/>
-      <OurTeam ourTeam={ourTeam}/>
-      <BlogPosts post={post}/>
-      <BackgroundFeaturedSeo backgroundFeaturedSeo={backgroundFeaturedSeo}/>
-      <OurClients ourClients={ourClients}/>
-      <Footer footer={footer}/>
-    </div>
-
-  );
-}
+  footer, }) => (
+  <>
+    
+    <FeaturedCarousel featuredCarousel={featuredCarousel} />
+    <FeaturedServices featuredServices={featuredServices} featuredServicesSection={featuredServicesSection} />
+    <FeaturedText featuredText={featuredText} />
+    <OurHistory ourHistory={ourHistory} />
+    <CompanyStats companyStats={companyStats} />
+    <OurTeam ourTeam={ourTeam} />
+    <BlogPosts post={post} />
+    <BackgroundFeaturedSeo backgroundFeaturedSeo={backgroundFeaturedSeo} />
+    <OurClients ourClients={ourClients} />
+    
+  </>
+)
 
 
 export const getServerSideProps = async () => {
@@ -102,4 +104,4 @@ export const getServerSideProps = async () => {
 }
 
 
-export default App;
+export default Home;
