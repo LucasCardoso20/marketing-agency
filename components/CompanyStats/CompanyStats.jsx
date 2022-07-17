@@ -36,8 +36,6 @@ const CompanyStats = ({ companyStats }) => {
             </div>
           ))}
         </div>
-
-
       </div>
     </section>
   )
