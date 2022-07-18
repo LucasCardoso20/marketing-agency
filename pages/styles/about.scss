@@ -13,10 +13,12 @@
     h2{
         font-size: $font-size-title;
         margin: 0;
+        font-weight: $weight-titles;
     }
 
     h5{
         font-size: $font-size-mid-large-responsive;
         line-height: 4rem;
+        font-weight: $weight-titles;
     }
 }
