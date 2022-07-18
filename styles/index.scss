@@ -108,6 +108,14 @@ figure{
 
 // the btn class has all the main styles and the other classes changes the colors
 
+.second-color{
+  color: $second-color !important;
+}
+
+.white-color {
+  color: $white-color !important;
+}
+
 .btn{
   font-weight: $weight-menu-and-button;
   font-size: $font-size-menu-and-button;

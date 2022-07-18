@@ -18,6 +18,7 @@ import backgroundFeaturedSeo from './backgroundFeaturedSeo'
 import post from './post'
 import category from './category'
 import author from './author'
+import aboutPage from './aboutPage'
 
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -41,5 +42,9 @@ export default createSchema({
     backgroundFeaturedSeo,
     ourClients,
     footer,
+
+    //About Page
+
+    aboutPage,
   ]),
 })

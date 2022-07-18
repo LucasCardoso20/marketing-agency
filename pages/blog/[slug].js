@@ -28,7 +28,6 @@ const SinglePost = ({ post, posts }) => {
         </div>
       </div>
 
-
       <main className='main-content-single-post'>
         <article className='blog-post'>
           <div className='single-post-details'>

@@ -1,0 +1,22 @@
+@import '../../styles/index.scss';
+
+.about-page{
+}
+
+.about-page-banner-content{
+    padding: 10rem 2rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    
+    h2{
+        font-size: $font-size-title;
+        margin: 0;
+    }
+
+    h5{
+        font-size: $font-size-mid-large-responsive;
+        line-height: 4rem;
+    }
+}
