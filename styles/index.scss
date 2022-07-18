@@ -30,7 +30,7 @@ $font-size-mid-subtext-responsive: 20px;
 $font-size-biggest-responsive: 60px;
 $font-size-big-responsive: 50px;
 $font-size-large-responsive: 32px;
-$font-size-title-responsive: 32px;
+$font-size-title-responsive: 25px;
 $font-size-subtext-responsive: 25px;
 
 
@@ -245,6 +245,10 @@ figure{
   color: $single-post-main-color;
   font-size: $font-size-title;
   font-weight: $weight-subtitles;
+
+  @media screen and (max-width: 980px){
+    font-size: $font-size-title-responsive;
+  }
 }
 
 .single-post-subtitle{

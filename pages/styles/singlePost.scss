@@ -23,10 +23,17 @@
     }
 }
 
+.single-post-block-content{
+    img{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 980px) {
     .main-content-single-post {
         display: flex;
         flex-direction: column;
+        padding: 1.5rem 2rem;
     }
 
     .blog-post {
