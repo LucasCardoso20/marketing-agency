@@ -10,6 +10,16 @@ import '../components/BlogPosts/BlogPosts.scss'
 import '../components/BackgroundFeaturedSeo/BackgroundFeaturedSeo.scss'
 import '../components/OurClients/OurClients.scss'
 import '../components/Footer/Footer.scss'
+
+//page styles
+
+import './styles/about.scss'
+import './styles/blog.scss'
+import './styles/caseStudies.scss'
+import './styles/contacts.scss'
+import './styles/services.scss'
+import './styles/singlePost.scss'
+
 import Layout from '../components/Layout/Layout'
 
 function MyApp({ Component, pageProps }) {

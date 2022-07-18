@@ -32,8 +32,8 @@ const SinglePost = ({ post, posts }) => {
       <main className='main-content-single-post'>
         <article className='blog-post'>
           <div className='single-post-details'>
-            <h1 className='title-h2'>{title}</h1>
-            
+            <h1 className='single-post-title'>{title}</h1>
+
           </div>
           <img src={urlFor(mainImage)} />
 
@@ -43,6 +43,20 @@ const SinglePost = ({ post, posts }) => {
             )}
           </div>
         </article>
+
+        <div className='recent-posts-container'>
+          <hr />
+          <h2 className='single-post-subtitle'>Recent Posts</h2>
+          <ul>
+            {posts.map((item) => (
+              <Link key={item.title} href={`/blog/${item.slug.current}`}>
+                <a>
+                  <li className='single-post-link'>{item.title}</li>
+                </a>
+              </Link>
+            ))}
+          </ul>
+        </div>
       </main>
     </section>
   )

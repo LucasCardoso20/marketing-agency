@@ -12,7 +12,7 @@ import { AiFillYoutube } from 'react-icons/ai'
 const Footer = ({ footer }) => {
   return (
     <footer id='footer' className='footer'>
-      <div className="footer-container container">
+      <div className="footer-container">
         <div className="logo-container">
           <Image src={logo} alt='logo' />
           <h5 className='subtitle-span'>Professional Search Engines Optimization</h5>

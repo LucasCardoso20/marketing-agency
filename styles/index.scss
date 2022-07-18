@@ -40,6 +40,7 @@ $weight-bolder: bold;
 $weight-titles: 700;
 $weight-menu-and-button: 600;
 $weight-subtitles: 300;
+$weight-links-single-post: 400;
 
 
 //Colors
@@ -53,6 +54,8 @@ $background-bar-socials: #F5F6F9;
 $background-icons: rgba(58, 58, 80, 0.5);
 $background-icons-footer: rgba(255, 255, 255, 0.6);
 $horizontal-line-color: #CECECE;
+
+$single-post-main-color: #3b3d42;
 
 //transition
 
@@ -234,5 +237,29 @@ figure{
 
   span{
     margin: 0 0.7rem;
+  }
+}
+
+
+.single-post-title{
+  color: $single-post-main-color;
+  font-size: $font-size-title;
+  font-weight: $weight-subtitles;
+}
+
+.single-post-subtitle{
+  font-size: $font-size-mid-subtext-responsive;
+  color: $single-post-main-color;
+  font-weight: $weight-subtitles;
+  text-transform: uppercase;
+}
+
+.single-post-link{
+  font-size: $font-size-menu-and-button;
+  color: $single-post-main-color;
+  font-weight: $weight-links-single-post;  
+
+  &:hover{
+    color: $second-color;
   }
 }
