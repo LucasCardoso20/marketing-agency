@@ -1,24 +1,42 @@
 @import '../../styles/index.scss';
 
-.main-content-single-post{
+.main-content-single-post {
     display: flex;
     padding: 3rem 6rem;
 }
 
-.blog-post{
+.blog-post {
     display: flex;
     flex-direction: column;
     width: 60%;
 }
 
-.recent-posts-container{
+.recent-posts-container {
     margin-left: 2.2rem;
     width: 40%;
 
-    ul{
+    ul {
         margin-top: 3rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
+}
+
+@media screen and (max-width: 980px) {
+    .main-content-single-post {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-post {
+        width: 100%;
+    }
+
+
+    .recent-posts-container {
+        margin-left: 0;
+        width: 100%;
+    }
+
 }
