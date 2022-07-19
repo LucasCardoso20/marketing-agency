@@ -1,8 +1,9 @@
 import Link from 'next/link'
 import React from 'react'
+import {CompanyStats} from '../components/index'
 import { client, urlFor } from '../client/client'
 
-const about = ({aboutPage}) => {
+const about = ({aboutPage, companyStats}) => {
   const {bannerImage, bannerTitle, bannerText, buttonText} = aboutPage[0]
   return (
     <>
@@ -38,6 +39,8 @@ const about = ({aboutPage}) => {
           </Link>
         </div>
       </section>
+      <CompanyStats companyStats={companyStats}/>
+      
     </>
 
   )
@@ -45,11 +48,14 @@ const about = ({aboutPage}) => {
 
 export const getStaticProps = async () => {
   const query = `*[_type == "aboutPage"]`;
-
   const aboutPage = await client.fetch(query)
 
+  const companyStatsQuery = '*[_type == "companyStats"]'
+  const companyStats = await client.fetch(companyStatsQuery)
+
   return {
-    props: { aboutPage }
+    props: { aboutPage, companyStats }
   }
 }
+
 export default about
