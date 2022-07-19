@@ -20,6 +20,7 @@ import category from './category'
 import author from './author'
 import aboutPage from './aboutPage'
 import keyAdvantages from './keyAdvantages'
+import meetOurTeam from './meetOurTeam'
 
 
 // Then we give our schema to the builder and provide the result to Sanity
@@ -47,6 +48,7 @@ export default createSchema({
     //About Page
 
     aboutPage,
-    keyAdvantages
+    keyAdvantages,
+    meetOurTeam,
   ]),
 })

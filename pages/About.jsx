@@ -2,13 +2,14 @@ import Link from 'next/link'
 import React from 'react'
 import { CompanyStats } from '../components/index'
 import { client, urlFor } from '../client/client'
+import Image from 'next/image'
 
-const about = ({ aboutPage, companyStats, keyAdvantages }) => {
+const about = ({ aboutPage, companyStats, keyAdvantages, meetOurTeam }) => {
   const { bannerImage, bannerTitle, bannerText, buttonText } = aboutPage[0]
 
   return (
     <>
-      {console.log(keyAdvantages)}
+      {console.log(meetOurTeam)}
       <div className='site-map'>
         <div className='site-map-container container'>
           <Link href='/'>
@@ -40,7 +41,7 @@ const about = ({ aboutPage, companyStats, keyAdvantages }) => {
           </Link>
         </div>
       </section>
-      <CompanyStats companyStats={companyStats} />
+
       <section className="key-advantages">
         <div className="key-advantages-container container">
           <h2 className="title-h2">Some of Our Key Advantagess</h2>
@@ -66,6 +67,29 @@ const about = ({ aboutPage, companyStats, keyAdvantages }) => {
         </div>
       </section>
 
+      <CompanyStats companyStats={companyStats} />
+
+      <section className="meet-our-team">
+        <div className="meet-our-team-container container">
+          <h2 className="title-h2">Meet Our Team</h2>
+
+          <div className="meet-our-team-content">
+            {meetOurTeam.map((item, index) => (
+              <article key={index}>
+                <img src={urlFor(item.image)}/>
+
+                <h4>{item.name}</h4>
+
+                <span>{item.role}</span>
+
+                <p>{item.description}</p>
+              </article>
+            ))}
+          </div>
+
+        </div>
+      </section>
+
     </>
 
   )
@@ -81,8 +105,11 @@ export const getStaticProps = async () => {
   const keyAdvantagesQuery = '*[_type == "keyAdvantages"]'
   const keyAdvantages = await client.fetch(keyAdvantagesQuery)
 
+  const meetOurTeamQuery = '*[_type == "meetOurTeam"]'
+  const meetOurTeam = await client.fetch(meetOurTeamQuery)
+
   return {
-    props: { aboutPage, companyStats, keyAdvantages }
+    props: { aboutPage, companyStats, keyAdvantages, meetOurTeam }
   }
 }
 

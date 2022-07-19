@@ -105,3 +105,23 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+//meet our team
+
+.meet-our-team{
+    background-color: $background-meet-our-team;
+}
+
+.meet-our-team-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    article{
+        width: calc(25% - 1rem);
+
+        img{
+            width: 100%;
+        }
+    }
+}
