@@ -30,5 +30,6 @@ export default {
             title: 'Button text',
             type: 'string',
         },
-    ]
+    ],
+
 }
