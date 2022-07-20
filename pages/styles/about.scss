@@ -123,5 +123,21 @@
         img{
             width: 100%;
         }
+
+        h4{
+            color: $second-color;
+            font-size: $font-size-blog-and-names;
+            font-weight: $weight-subtitles;
+        }
+
+        span{
+            color: $main-color;
+            font-weight: $weight-menu-and-button;
+        }
+
+        p{
+            color: $main-color;
+            line-height: 2rem;
+        }
     }
 }
